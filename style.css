@@ -1,0 +1,177 @@
+@font-face{
+    font-family: 'akira';
+    src: url(/fonts/Akira\ Expanded\ Demo.otf);
+}
+
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12;
+}
+
+body{
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+header{
+    height: 100dvh;
+    background-image:url(/assets/img/home.png);
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* Ajusta según la altura de tu navbar */
+    z-index: 1000;
+    background-color: black;
+
+    --img1: scale(1);
+    --img1: scale(0);
+}
+
+
+
+h1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color:aliceblue;
+    font-size: 1.5rem;
+}
+
+
+.material-symblos-outside{
+    color: #fff;
+    fill: 100px;
+}
+
+
+/*HEADER*/
+
+a{
+    display: flex; /*permite utilizar flexbox para la distribución de elementos. */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar a{
+    display: flex; /*permite utilizar flexbox para la distribución de elementos. */
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-around; /* Espaciado igualitario entre los elementos */
+    align-items: center; /* Centrado vertical */
+    padding: 30px 10px;
+    width: 1920px;
+}
+
+.logo_header a {
+    font-family: 'akira';
+    color: white; /* Color de texto del enlace # */
+    text-decoration: none;
+    font-size: 1.5rem; /* Tamaño del texto */
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+}
+
+.input_buscar[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1.5px solid #252525;
+}
+
+.slidebar {
+    color: white; /* Cambia el color de la barra lateral */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/*PRUEBA DE H1/DROP -- IMAGEN -- INFO*/
+.drop{
+    background-image: url(/assets/img/fondo_detalles.png);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 392px; /* 100% del alto de la ventana del navegador */
+    min-height: 150px;
+    gap: 30px; /* Espacio entre el <h1> y la imagen */
+    text-align: center;
+}
+
+.img_repeated{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    min-height: 150px;
+    text-align: center;
+    background-image:url(assets/img/logo.png); /* Ruta de tu imagen */
+    background-repeat: repeat-x; /* Repite la imagen de manera horizontal */
+    background-position: center center; /* Centra la imagen dentro del div */
+    background-size: 150px;
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.3); /* 50% de transparencia */
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    color: #fff; /* Puedes cambiar el color del texto */
+}
+
+.info_img{
+    display: flex;
+    width: 100%;
+}
+
+.info{
+    background-image: url(/assets/img/fondo_detalles.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 180px;
+    gap: 180px; 
+    text-align: center;
+}
+
+.info_left{
+    margin-left: 300px;
+    text-align: left;
+    align-content:center;
+}
+
+.info_right{
+    margin-right:80px;
+    align-content: center;
+    text-align: justify;
+    position: relative;
+}
+
