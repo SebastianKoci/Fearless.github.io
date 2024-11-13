@@ -33,7 +33,7 @@ nav{
     position: fixed; /* Fija el navbar en la parte superior */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100dvh;
     height: 70px; /* Ajusta según la altura de tu navbar */
     z-index: 1000;
     background-color: black;
